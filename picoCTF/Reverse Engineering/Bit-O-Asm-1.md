@@ -13,3 +13,15 @@ would be picoCTF{17}.
 Challenge link: [https://play.picoctf.org/practice/challenge/391?category=3&page=2]
 
 ## Solution
+
+Bước đầu tiên ta sẽ tải và mở assembly dump, ta có đoạn text như sau:
+```
+<+0>:     endbr64 
+<+4>:     push   rbp
+<+5>:     mov    rbp,rsp
+<+8>:     mov    DWORD PTR [rbp-0x4],edi
+<+11>:    mov    QWORD PTR [rbp-0x10],rsi
+<+15>:    mov    eax,0x30
+<+20>:    pop    rbp
+<+21>:    ret
+```
